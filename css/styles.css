@@ -185,6 +185,9 @@ h1 {
     text-align: center;    
 }
 
+h2 {
+    display: none;
+}
 .orderbutton {color: var(--WHITE, #FFF);
 
     /* Button Text */
@@ -428,24 +431,6 @@ h1 {
     text-align: center;
     background-color: var(--cloud);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .sendbutton {
@@ -891,8 +876,127 @@ footer p:hover {
 }
 
 
+/* START REPONSIVE LAYOUT */
 
 
+@media only screen and (max-width: 428px) {
+    .nav{
+    display: none;
+    }
+
+    .tel-no {
+        display: none;
+    }
+
+    .topcontainer .topline .logofull .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 16px;
+        margin: 0;
+    }
+
+    .herobanner {
+        max-width: 428px;
+    }
+    .herobanner .hero-container {
+        height: 432px;
+        width: 428px;
+        background-color: var(--NAVY-BLUE);
+        background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)),
+        url("../images/people-office-1.jpg");
+            background-position: center;
+            background-size: cover;
+            padding: 0;
+            margin: 0;
+    }
+ 
+    .herobanner .hero-container .herobanner h1{
+        color: var(--WHITE, #FFF);
+        text-align: center;
+            /* Header 2 */
+        font-size: 80px;
+        /* font-style: normal; */
+        font-weight: 700;
+        line-height: 40px;
+            /* 111.111% */
+        letter-spacing: 0.72px;
+        /* text-transform: capitalize; */
+    }    
+
+
+    .sectionvision ul li .icons{
+         display: none;
+        }
+
+    .sectionvision ul li h3 {
+        font-size:36px;
+    }
+
+    .sectionvision ul {
+        margin-top: 96px;
+        display: block;
+        width: 396px;   
+        padding: 0;
+        margin: 96px 16px 0px 16px;
+    }
+    .sectionvision .vision .card {
+        display: flex;
+        flex-direction: column;
+        width: 396px;
+        text-align: center;
+        margin-bottom: 72px;
+        padding: 0;
+    }
+    .sectionvision .vision .card p {
+        padding: 0;
+        margin: 0;
+        
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* END RESPONSIVE LAYOUT */
 
 
 
