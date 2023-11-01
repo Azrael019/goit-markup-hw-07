@@ -139,6 +139,10 @@ nav a {
     gap: 40px;
 }
 
+
+.menubar {
+    display: none;
+}
 /* end of headliner layout */
 
 
@@ -170,7 +174,7 @@ nav a {
     color: #fff;
 
 }
-h1 {
+.bannertext {
     color: var(--WHITE, #FFF);
     text-align: center;
 
@@ -185,9 +189,7 @@ h1 {
     text-align: center;    
 }
 
-h2 {
-    display: none;
-}
+
 .orderbutton {color: var(--WHITE, #FFF);
 
     /* Button Text */
@@ -600,6 +602,7 @@ section .vision .card:not(:nth-child(1)){
     gap: 24px;
     padding-top: 72px;
     margin-left: 156px;
+}
 
 
 .socialicon {
@@ -632,17 +635,20 @@ section .vision .card:not(:nth-child(1)){
     margin-left: 16px;  
     padding-top: 32px;  
     }
-}
+
 
     /* END OUR TEAM DESIGN */
         
         
     /* CUSTOMERS DESIGN AND LAYOUT */
         
-        
+  
+ 
+
 .customerheader {
     display: flex;
     justify-content: center;
+    align-self: center;
     padding-top: 120px;
     padding-bottom: 72px;      
     }
@@ -653,6 +659,7 @@ section .vision .card:not(:nth-child(1)){
     justify-content: center;
     gap: 24px;
     padding-bottom: 120px;
+   
 }
 
 
@@ -717,12 +724,12 @@ footer .footer-content{
     padding-left: 156px;
 }
 
-footer a{
+footer .logofooter{
     text-decoration: none;
     margin-bottom: 16px;
 }
 
-.hero-container h1 {
+.hero-container bannertext {
     color: #fff;
 }
 
@@ -880,95 +887,255 @@ footer p:hover {
 
 
 @media only screen and (max-width: 428px) {
-    .nav{
-    display: none;
-    }
-
-    .tel-no {
-        display: none;
-    }
-
-    .topcontainer .topline .logofull .logo{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        padding: 16px;
+    * {
+        padding:0;
         margin: 0;
     }
 
-    .herobanner {
+    .mainbody {
         max-width: 428px;
     }
-    .herobanner .hero-container {
-        height: 432px;
-        width: 428px;
-        background-color: var(--NAVY-BLUE);
-        background-image: linear-gradient(to bottom,
-            rgba(46, 47, 66, 0.70),
-            rgba(46, 47, 66, 0.70)),
-        url("../images/people-office-1.jpg");
-            background-position: center;
-            background-size: cover;
-            padding: 0;
-            margin: 0;
+
+    .nav, .tel-no {
+        display: none;
     }
- 
-    .herobanner .hero-container .herobanner h1{
-        color: var(--WHITE, #FFF);
-        text-align: center;
-            /* Header 2 */
-        font-size: 80px;
-        /* font-style: normal; */
+
+    .topcontainer {
+        width: 428px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 16px;
+      
+      
+    }
+
+    .topcontainer .logo {
+        display: inline-block;
+        margin-left: 16px;
+    }
+
+    
+    .menubar {
+    display: inline-block; 
+    /* margin-right: 16px;   
+    padding-right: 16px; */
+    }
+
+    .menubar:hover {
+        cursor: pointer;
+    }
+   
+
+
+
+
+   
+
+    /* HEADER */
+
+    .hero-container h1 {
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
         font-weight: 700;
         line-height: 40px;
             /* 111.111% */
         letter-spacing: 0.72px;
-        /* text-transform: capitalize; */
-    }    
-
-
-    .sectionvision ul li .icons{
-         display: none;
-        }
-
-    .sectionvision ul li h3 {
-        font-size:36px;
+        text-transform: capitalize;
     }
 
-    .sectionvision ul {
-        margin-top: 96px;
-        display: block;
-        width: 396px;   
-        padding: 0;
-        margin: 96px 16px 0px 16px;
+    /* HEADER */
+
+
+    /* VISION */
+
+
+    .icons {
+        display: none;
     }
-    .sectionvision .vision .card {
+
+    .sectionvision {
+        width: 428px;
+    }
+
+    .vision {
         display: flex;
         flex-direction: column;
-        width: 396px;
-        text-align: center;
-        margin-bottom: 72px;
-        padding: 0;
+        margin-left: 16px;
+        gap: 72px;
+        max-width: 428px;
+        margin-right: 16px;
     }
-    .sectionvision .vision .card p {
-        padding: 0;
-        margin: 0;
-        
 
+    .vision .card {
+        width: 396px;
+    }
+
+   .featuretext {
+        text-align: center;
+        align-self: self-start;
+            /* Header 2 */
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+            /* 111.111% */
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+   
+    }
+
+    .featureparagraph {
+            display: flex;
+            width: 396px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+    }
+
+   /* VISION */
+
+
+
+
+    /* What We Are Doing */
+
+    .image-container {
+        Display: none;
+    }
+
+
+    /* What We Are Doing */
+
+
+    /* OUR TEAM */
+
+    .photos {
+        margin-left: 82px;
+        margin-bottom: 96px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+    }
+
+    /* OUR TEAM */
+
+
+
+    /* CUSTOMER */
+
+    .customers {
+        width: 428px;
+    }
+
+    .customerheader {
+        display: flex;
+        justify-content: center;
+    
+       
+        padding-bottom: 72px;
+        color: var(--NAVY-BLUE, #2E2F42);
+        text-align: center;
+    
+        /* Header 2 */
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        /* 111.111% */
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+    }
+
+    .clientlogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+    .customer {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .customerlogo {
+        width: 190px;
+        height: 88px;
+        display: flex;
+        justify-content: center;
+      
+    }
+
+    /* CUSTOMER */
+
+
+
+    /* FOOTER SECTION */
+
+    .mainfooter {
+        width: 428px;
+        height: fit-content;
+        
+    }
+
+    .logofooter, .socialmediafooter {
+        align-self: center;
+    }
+
+    .footersection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+    .mainfooter .footer-content {
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .footersocialmedia {
+        align-self: center;
+        gap: 16px;
+    }
+
+
+    .footer-sub {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+     .input-sub {
+        border: 2px solid white;
+        opacity: 0.3;
+        background: none;
+        border-radius: 4px;
+        align-self: center;
+        width: 398px;
+        background-color: none;
+        margin-right: 15px;
         }
 
+    .btn-sub {
+        margin-top: 16px;
+        margin-bottom: 96px;
+    }
+
+
+   
+ 
 
 
 
-
-
-
-
-
-
-
-
-
+    /* FOOTER SECTION */
 
 
 
@@ -978,24 +1145,6 @@ footer p:hover {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* END RESPONSIVE LAYOUT */
 
 

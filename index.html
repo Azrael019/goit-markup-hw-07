@@ -21,7 +21,7 @@
     />
   </head>
 
-  <body>
+  <body class="mainbody">
     <!--Start of header-->
     <!-- Navigation to other pages -->
     <header>
@@ -55,15 +55,25 @@
             </li>
           </ul>
         </div>
-      </div>
+
+        <div>
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#menubar"></use>
+          </svg>
+        </div>
+          
+      
     </header>
+
     <!--End of Header-->
 
     <!--Start of Main-->
     <section class="herobanner">
       <div class="hero-container">
         <div class="hero-content">
-          <h1>Effective Solutions <br />for Your Business</h1>
+          <h1 class="bannertext">
+            Effective Solutions <br />for Your Business
+          </h1>
           <button id="modalBtn" class="orderbutton" data-modal-open>
             Order Service
           </button>
@@ -142,11 +152,13 @@
               <use href="./images/icons.svg#antenna-1"></use>
             </svg>
           </div>
-          <h3>Strategy</h3>
-          <p>
-            Our goal is to identify the business problem to walk away with the
-            perfect and creative solution.
-          </p>
+          <div class="feature">
+            <h3 class="featuretext">Strategy</h3>
+            <p class="featureparagraph">
+              Our goal is to identify the business problem to walk away with the
+              perfect and creative solution.
+            </p>
+          </div>
         </li>
         <li class="card">
           <div class="icons">
@@ -154,11 +166,13 @@
               <use href="./images/icons.svg#clock-1"></use>
             </svg>
           </div>
-          <h3>Punctuality</h3>
-          <p>
-            Bring the key message to the brand's audience for the best price
-            within the shortest possible time.
-          </p>
+          <div class="feature">
+            <h3 class="featuretext">Punctuality</h3>
+            <p class="featureparagraph">
+              Bring the key message to the brand's audience for the best price
+              within the shortest possible time.
+            </p>
+          </div>
         </li>
         <li class="card">
           <div class="icons">
@@ -166,11 +180,13 @@
               <use href="./images/icons.svg#diagram-1"></use>
             </svg>
           </div>
-          <h3>Diligence</h3>
-          <p>
-            Research and confirm brands that present the strongest digital
-            growth opportunities and minimize risk.
-          </p>
+          <div class="feature">
+            <h3 class="featuretext">Diligence</h3>
+            <p class="featureparagraph">
+              Research and confirm brands that present the strongest digital
+              growth opportunities and minimize risk.
+            </p>
+          </div>
         </li>
         <li class="card">
           <div class="icons">
@@ -178,11 +194,13 @@
               <use href="./images/icons.svg#astronaut-1"></use>
             </svg>
           </div>
-          <h3>Technologies</h3>
-          <p>
-            Design practice focused on digital experiences. We bring forth a
-            deep passion for problem-solving.
-          </p>
+          <div class="feaure">
+            <h3 class="featuretext">Technologies</h3>
+            <p class="featureparagraph">
+              Design practice focused on digital experiences. We bring forth a
+              deep passion for problem-solving.
+            </p>
+          </div>
         </li>
       </ul>
     </section>
@@ -421,7 +439,7 @@
     <!--End of Main-->
 
     <!--Start of Footer-->
-    <footer>
+    <footer class="mainfooter">
       <div class="footersection">
         <div class="footer-content">
           <a class="logofooter" href="#"><span>WEB</span>STUDIO</a>
