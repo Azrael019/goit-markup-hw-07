@@ -143,6 +143,15 @@ nav a {
 .menubar {
     display: none;
 }
+
+
+
+.menu--right {
+
+    display: none;
+
+}
+
 /* end of headliner layout */
 
 
@@ -903,8 +912,8 @@ footer p:hover {
     .topcontainer {
         width: 428px;
         display: flex;
-        justify-content: space-between;
-        padding-right: 16px;
+        gap: 249px;
+        margin-right: 16px;
       
       
     }
@@ -916,9 +925,8 @@ footer p:hover {
 
     
     .menubar {
-    display: inline-block; 
-    /* margin-right: 16px;   
-    padding-right: 16px; */
+        display: inline-block; 
+        
     }
 
     .menubar:hover {
@@ -926,10 +934,20 @@ footer p:hover {
     }
    
 
+    /* MENUBURGERMODAL */
+  
 
 
 
-   
+
+
+
+
+
+
+
+
+    /* MENUBURGERMODAL */
 
     /* HEADER */
 
