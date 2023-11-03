@@ -140,17 +140,13 @@ nav a {
 }
 
 
-.menubar {
+.burger-menu {
     display: none;
 }
 
 
 
-.menu--right {
 
-    display: none;
-
-}
 
 /* end of headliner layout */
 
@@ -924,7 +920,7 @@ footer p:hover {
     }
 
     
-    .menubar {
+    .burger-menu {
         display: inline-block; 
         
     }
@@ -945,10 +941,6 @@ footer p:hover {
         position: fixed;
         display: flex;
         justify-content: flex-end;
-        
-
-      
-       
     }
 
     .closeMenuBtn {
@@ -959,6 +951,8 @@ footer p:hover {
         margin: 24px;
         position: relative;
     }
+
+    /* end mobile menu */
 
 
   
