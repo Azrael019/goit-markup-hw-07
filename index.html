@@ -54,14 +54,16 @@
             </li>
           </ul>
         </div>
-        <button class="burger-menu js-open-menu" id="mobileMenu">
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg width="32" height="22">
             <use href="./images/icons.svg#menubar"></use>
           </svg>
         </button>
-      </div>
-      <div class="mobilemenu-container js-menu-container" id="mobileMenu">
-        <button class="closeMenuBtn js-close-menu">&times;</button>
       </div>
     </header>
 
@@ -437,6 +439,10 @@
     </section>
 
     <!--End of Main-->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">&times;</button>
+    </div>
 
     <!--Start of Footer-->
     <footer class="mainfooter">
