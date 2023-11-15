@@ -994,7 +994,7 @@ footer p:hover {
   .topcontainer {
     width: 428px;
     display: flex;
-    gap: 249px;
+    /* gap: 249px; */
     margin-right: 16px;
   }
 
@@ -1013,7 +1013,7 @@ footer p:hover {
     align-items: center;
     justify-content: center;
 
-    margin: 0;
+    margin-right: 16px;
     padding: 0;
     background-color: transparent;
     cursor: pointer;
