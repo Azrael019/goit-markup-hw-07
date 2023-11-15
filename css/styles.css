@@ -788,6 +788,8 @@ footer .logofooter {
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 72px;
+  margin-left: 156px;
+  margin-right: 156px;
 }
 
 .footersocialmedia {
