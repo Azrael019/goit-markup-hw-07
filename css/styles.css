@@ -1032,11 +1032,11 @@ footer p:hover {
     transform: translateX(0);
   }
 
-  .is-open {
+  /* .is-open {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-  }
+  } */
 
   .menu-container {
     position: fixed;
@@ -1074,8 +1074,9 @@ footer p:hover {
     flex-direction: row;
     justify-content: center;
     gap: 56px;
-    position: relative;
-    top: 500px;
+    margin-top: 48px;
+    /* position: relative; */
+    /* top: 500px; */
   }
 
   .active::after {
@@ -1110,7 +1111,7 @@ footer p:hover {
   }
 
   .menu-emailandphone .menu-telno {
-    color: var(--IRIS, #4d5ae5);
+    color: var(--IRIS, #434455);
     /* Header 2 */
     font-family: Roboto;
     font-size: 36px;
@@ -1140,10 +1141,46 @@ footer p:hover {
     color: #e7e9fc;
   }
 
-  .mobile-menu {
+  /* .mobile-menu {
     padding: 0;
     margin: 0;
     list-style: none;
+  } */
+
+  .menu-navigation a,
+  .menu-emailandphone a {
+    text-decoration: none;
+  }
+
+  .menu-navigation a {
+    color: var(--NAVY-BLUE, #2e2f42);
+    /* Header 2 */
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    margin-top: 80px;
+  }
+
+  .menu-portfolio a:hover,
+  .menu-contacts a:hover,
+  .studio a:hover {
+    color: #404bbf;
+  }
+
+  .menu-telno a:hover,
+  .menu-email a:hover {
+    color: #404bbf;
+  }
+
+  .menu-emailandphone {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 284px;
   }
 
   /* MENUBURGERMODAL */
