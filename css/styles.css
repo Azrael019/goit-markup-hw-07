@@ -103,6 +103,7 @@ nav a {
 /* start of headliner layout */
 
 .topcontainer {
+  width: fit-content;
   display: flex;
   align-items: center;
   height: 72px;
@@ -126,9 +127,11 @@ nav a {
 }
 
 .emailandphone {
+  width: max-content;
   display: flex;
   flex-direction: row;
   gap: 40px;
+  margin-left: 332px;
 }
 
 .menu-toggle {
@@ -272,12 +275,6 @@ nav a {
   opacity: 0;
   pointer-events: none;
 }
-
-/* .is-open {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-} */
 
 .modalheader {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -832,13 +829,9 @@ footer p:hover {
   list-style-type: none;
 }
 
-.tel-no {
-  margin-left: auto;
-}
-
 /* START REPONSIVE LAYOUT */
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .mainbody {
     max-width: 768px;
     margin: 0 !important;
@@ -857,7 +850,7 @@ footer p:hover {
   }
 
   .logofull {
-    display: inline-block;
+    /* display: inline-block; */
   }
 
   .navigation {
@@ -868,9 +861,19 @@ footer p:hover {
     margin-left: 16px;
     margin-right: 16px;
     justify-content: space-between;
+    /* gap: 500px; */
+  }
+
+  .tel-no {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-left: 0;
   }
 
   .emailandphone {
+    margin-left: 80px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -909,36 +912,34 @@ footer p:hover {
   }
 
   .vision {
+    max-width: 736px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 24px;
     flex-wrap: wrap;
-    margin: 96px 8px;
-    justify-content: space-evenly;
+    margin: 96px auto;
   }
 
-  .vision :nth-child(3) {
+  /* .vision :nth-child(3) {
     margin-top: 76px;
   }
   .vision :nth-child(4) {
     margin-top: 76px;
-  }
+  } */
 
   .image-container {
     display: none;
   }
 
   .photos {
+    width: 552px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
-    margin: 72px 108px;
-  }
-
-  .photos .camila,
-  .photos .daniel {
-    margin-top: 76px;
+    margin: 72px auto;
+    row-gap: 64px;
   }
 
   .socialmediaicons {
@@ -956,7 +957,8 @@ footer p:hover {
     justify-content: center;
     flex-wrap: wrap;
     gap: 24px;
-    margin: 0 50px;
+    margin: 72px auto;
+    max-width: 600px;
   }
 
   .footersection {
@@ -976,7 +978,7 @@ footer p:hover {
   }
 }
 
-@media only screen and (max-width: 428px) {
+@media only screen and (min-width: 428px) and (max-width: 767px) {
   * {
     padding: 0;
     margin: 0;
@@ -992,15 +994,14 @@ footer p:hover {
   }
 
   .topcontainer {
-    width: 428px;
     display: flex;
-    /* gap: 249px; */
-    margin-right: 16px;
+    gap: 210px;
+    margin: 16px;
   }
 
   .topcontainer .logo {
-    display: inline-block;
-    margin-left: 16px;
+    /* display: inline-block; */
+    /* margin-left: 16px; */
   }
 
   /* MENUBURGERMODAL */
@@ -1025,6 +1026,16 @@ footer p:hover {
   .menu-toggle:hover,
   .menu-toggle:focus {
     background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-menu.is-open {
+    transform: translateX(0);
+  }
+
+  .is-open {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
   }
 
   .menu-container {
@@ -1330,46 +1341,21 @@ footer p:hover {
   /* FOOTER SECTION */
 }
 
-/* @media (min-width: 428px) {
-  .container {
-    width: 428px;
-  }
-} */
-
-/* @media (min-width: 768px) {
-    .container {
-        width: 767px;
-    }
-    .menu-container {
-        display: none;
-    }
-} */
-
-/* @media (min-width: 1200px) {
-    .container {
-        width: 1200px;
-    }
-
-    .emailandphone {
-        display: flex;
-    }
-} */
-
 /* END RESPONSIVE LAYOUT */
 
-/* @media (max-width: 767px) {
-    .menu-container.is-open {
-        transform: translateX(0);
-    }
-    .menu-container {
-        top: 0;
-        display: block;
-        height: 100vh;
-        width: 100%;
-        position: fixed;
-        background-color: white;
-        transform: translateX(100%);
-        transition: transform 250ms ease-in-out;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-} */
+@media (max-width: 767px) {
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+  .menu-container {
+    top: 0;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
